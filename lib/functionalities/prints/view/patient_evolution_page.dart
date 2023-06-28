@@ -66,14 +66,14 @@ class _PatientEvolutionPageState extends State<PatientEvolutionPage> {
 
   Future<Uint8List> _generatePdf(PdfPageFormat format) async {
     final pdf = pw.Document(version: PdfVersion.pdf_1_5, compress: true);
-    final ByteData image = await rootBundle.load('images/butterfly.jpeg');
+    final ByteData image = await rootBundle.load('images/placeholder.png');
     Uint8List imageData = (image).buffer.asUint8List();
 
     pdf.addPage(
       pw.MultiPage(
         footer: (context) {
           return pw.Center(
-              child: pw.Text('(31) 99914-1848 | Rua Inconfidência, 357, sala 102. Centro. Betim',
+              child: pw.Text('(DDD) xxxx-xxxx | Rua Ficticia, 987, sala 102. Centro. Betim',
                   style: pw.TextStyle(fontSize: 10, fontWeight: pw.FontWeight.bold)));
         },
         pageFormat: PdfPageFormat.a4,
@@ -87,8 +87,8 @@ class _PatientEvolutionPageState extends State<PatientEvolutionPage> {
                         height: 200,
                         width: 200,
                         child: pw.Opacity(opacity: 0.5, child: pw.Image(pw.MemoryImage(imageData))))),
-                pw.Center(child: pw.Text('LUDMILA CAPANEMA')),
-                pw.Center(child: pw.Text('PSICÓLOGA', style: const pw.TextStyle(fontSize: 10))),
+                pw.Center(child: pw.Text('Dr. Psy Cologo')),
+                pw.Center(child: pw.Text('PSICÓLOGO', style: const pw.TextStyle(fontSize: 10))),
                 pw.SizedBox(height: 16),
                 pw.Text('Prontuario Psicológico', style: pw.TextStyle(fontSize: 10, fontWeight: pw.FontWeight.bold)),
                 pw.SizedBox(height: 4),
@@ -150,7 +150,7 @@ class _PatientEvolutionPageState extends State<PatientEvolutionPage> {
                         pw.TextSpan(
                             text: 'Finalizado em: ', style: pw.TextStyle(fontWeight: pw.FontWeight.bold, fontSize: 10)),
                         pw.TextSpan(
-                            text: DateFormat('dd/MM/yyyy').format(patientEvolutionController.patient.dateEnd!),
+                            text: (patientEvolutionController.patient.dateEnd != null && patientEvolutionController.patient.dateEnd != '') ? DateFormat('dd/MM/yyyy').format(patientEvolutionController.patient.dateEnd!) : '',
                             style: const pw.TextStyle(fontSize: 10))
                       ]))),
                 ]),
@@ -158,15 +158,15 @@ class _PatientEvolutionPageState extends State<PatientEvolutionPage> {
                 pw.Stack(children: [
                   pw.RichText(
                       text: pw.TextSpan(children: [
-                    pw.TextSpan(text: 'Psicóloga: ', style: pw.TextStyle(fontSize: 10, fontWeight: pw.FontWeight.bold)),
-                    const pw.TextSpan(text: 'Ludmila Amaral Capanema', style: pw.TextStyle(fontSize: 10)),
+                    pw.TextSpan(text: 'Psicólogo: ', style: pw.TextStyle(fontSize: 10, fontWeight: pw.FontWeight.bold)),
+                    const pw.TextSpan(text: 'Dr. Psy Cologo', style: pw.TextStyle(fontSize: 10)),
                   ])),
                   pw.Padding(
                       padding: const pw.EdgeInsets.fromLTRB(322, 0, 0, 0),
                       child: pw.RichText(
                           text: pw.TextSpan(children: [
                         pw.TextSpan(text: 'CRP: ', style: pw.TextStyle(fontWeight: pw.FontWeight.bold, fontSize: 10)),
-                        const pw.TextSpan(text: '04/23909', style: pw.TextStyle(fontSize: 10))
+                        const pw.TextSpan(text: 'xx/xxxxx', style: pw.TextStyle(fontSize: 10))
                       ]))),
                 ]),
                 pw.SizedBox(height: 30),
