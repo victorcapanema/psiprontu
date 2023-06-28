@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "302055403564",
+    "project_id": "prontuario-7614a",
+    "storage_bucket": "prontuario-7614a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302055403564:android:f1e07a78ea3304e34fa189",
+        "android_client_info": {
+          "package_name": "com.victaoforce.prontuario"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "302055403564-78661odsh2a8sfb1cfpk99qprd96djo1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqPMxkIrI3-0Z74gGCvKLUXV8RrHzVhG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "302055403564-4lfgi1m2h6itkc0c3nmvtem2kqn2b4tj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
