@@ -13,8 +13,8 @@ class LoginController = _LoginController with _$LoginController;
 abstract class _LoginController with Store {
 
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
-  final TextEditingController userController = TextEditingController();
-  final TextEditingController pwController = TextEditingController();
+  final TextEditingController userController = TextEditingController(text: 'usertest@prontuteste.com' );
+  final TextEditingController pwController = TextEditingController(text: '123456');
   final FirebaseRepository firebaseRepository;
   late UserModel _user;
 

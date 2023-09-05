@@ -6,7 +6,7 @@ import 'package:prontuario/widgets/c_icon_button.dart';
 import '../shared/constants/functions.dart';
 
 class CAppBar extends StatelessWidget implements PreferredSizeWidget {
-  CAppBar({this.isLogin = false, this.title = 'Prontuario', this.isHome = false, Key? key}) : super(key: key);
+  CAppBar({this.isLogin = false, this.title = 'Prontuário', this.isHome = false, Key? key}) : super(key: key);
   final bool isLogin;
   final String title;
   final bool isHome;

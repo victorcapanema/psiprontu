@@ -8,7 +8,6 @@ import 'package:prontuario/widgets/c_elevated_button.dart';
 import 'package:prontuario/widgets/c_text_form_field.dart';
 import '../../../shared/web_libs/htlm_functions.dart';
 import '../../../widgets/c_icon_button.dart';
-import '../../../widgets/c_stack.dart';
 import '../../../widgets/contacts.dart';
 import '../controller/login_controller.dart';
 
@@ -64,7 +63,7 @@ class _LoginPageState extends State<LoginPage> {
                                 ])),
                             const SizedBox(height: 8),
                             const Text(
-                              'Este é um sistema de prontuario para psicologos, aqui você pode cadastrar pacientes, agendar e realizar consultas, imprimir a evolução e mais... ',
+                              'Este é um sistema de prontuário para psicólogos, aqui você pode cadastrar pacientes, agendar e realizar consultas, imprimir a evolução e mais... ',
                               style: TextStyle(color: Colors.black, fontSize: 20, shadows: [
                                 Shadow(color: Colors.white, offset: Offset(5, 5), blurRadius: 15),
                               ]),

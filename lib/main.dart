@@ -10,7 +10,8 @@ import 'package:flutter/gestures.dart';
 ///
 ///Firebase is initialized here [main]
 ///In Widget build are defined the localization and scroll options utilized by calendar and vertical scroll when needed
-
+///
+///Use your own key right here
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
