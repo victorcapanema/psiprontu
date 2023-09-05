@@ -16,13 +16,13 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
       options: const FirebaseOptions(
-          apiKey: "AIzaSyC9xNHHSxlWuVmfaUpJNzXHBX-5P78RqHQ",
-          authDomain: "prontuario-7614a.firebaseapp.com",
-          projectId: "prontuario-7614a",
-          storageBucket: "prontuario-7614a.appspot.com",
-          messagingSenderId: "302055403564",
-          appId: "1:302055403564:web:5293ac50a7a3317e4fa189",
-          measurementId: "G-3NT7NLVXM6"));
+          apiKey: "",
+          authDomain: "",
+          projectId: "",
+          storageBucket: "",
+          messagingSenderId: "",
+          appId: "",
+          measurementId: ""));
   runApp(ModularApp(module: AppModule(), child: const MyApp()));
 }
 
